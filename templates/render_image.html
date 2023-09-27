@@ -1,0 +1,19 @@
+<html>
+
+    <head>
+        <title>Result Page</title>
+    </head>
+
+    <body>
+
+        {% if error %}
+            <h1>Invalid Image Format Used</h1>
+
+        {% else %}
+            <img src="{{ url_for('static', filename= 'cyclone_detected_images/'+file_name) }}" alt="This image is not available" />
+
+        {% endif %}
+
+    </body>
+
+</html>

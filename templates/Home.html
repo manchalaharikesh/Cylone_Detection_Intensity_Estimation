@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .page{
+                padding: 0px;
+                margin: 0px;
+            }
+            .top{
+                padding: 15px 20px;
+                text-align: center;
+            }
+            .textnormal{
+                font-size: x-large;
+            }
+            .card-text{
+                font-size: x-large;
+            }
+            .page {
+                height: 100%;
+                background: linear-gradient(0, white 35%, #00FFFF 35% 65%);
+            }
+            li{
+                padding : 0px 24px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid text-light page pb-5" style="background-color: #1a1f25;">
+            
+            <!-- navbar -->
+            <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #eff3f3;">
+                <!-- Navbar content -->
+                <a class="navbar-brand ms-4 rounded pe-3 ps-3" style = "color : #e75440 ; font-size : 25px; font-weight: bold; font-family: 'Allerta Stencil', sans-serif;" href="#">Rudra</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Analysis.html">Data Analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class=" text-dark top">
+                <h1>PROJECT RUDRA</h1>
+            </div>
+
+            <div>
+                <p class="textnormal text-dark container mt-5 mb-5">This project aims to develop a Deep-Learning based application to estimate intensity of cyclones using INSAT-3D IR imagery. <br> 
+                    The successful implementation of system can help immensely to observe and understand the instantaneous structural changes during evolution, intensification, and landfall of Tropical Cyclones.
+                <br> Through traditional techniques, predicting accurate center of the cyclone is difficult and has low precision and accuracy. To help resolve this, the center can be identified accurately using the CNN based model with high levels of accuracy.</p>
+            </div>
+
+            <!-- Cards -->
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-4" >
+                        <div class="card w-100 text-white bg-light mb-3" style="min-height: 425px;">
+                            <div class="card-header text-danger" style="font-size: x-large;"><u>Cyclone Detection </u></div>
+                            <div class="card-body">
+                              <p class="card-text text-dark">This module is used for detection of the presence of cyclone in the IR image obtained from the satellite.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <form action="/getCycloneDetectionPage">
+                                    <a href="./Cyclone_Detection.html">
+                                        <button class="btn btn-primary">Detect Cyclone</button>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" >
+                        <div class="card text-white bg-light mb-3" style="min-height: 425px;">
+                            <h1 class="card-header  text-danger" style="font-size: x-large;"><u> Cyclone Intensity Estimation </u></h1>
+                            <div class="card-body">
+                              <p class="card-text text-dark">This module is used for estimating the intensity of the cyclone from the latest images retrieved.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#">
+                                    <button class="btn btn-primary">Estimate Intensity</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" >
+                        <div class="card text-white bg-light mb-3" style="min-height: 425px;">
+                            <div class="card-header  h1 text-danger" style="font-size: x-large;"><u> Current Analysis </u></div>
+                            <div class="card-body">
+                                <p class="card-text text-dark">This module is used for analysing the intensities estimated from the recently processed images.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="./Analysis.html">
+                                    <button class="btn btn-primary">Data Analysis</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</html>
