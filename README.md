@@ -21,6 +21,8 @@ ii.  Extract the Region of interest (ROI) from the detected cyclone.
 
 iii.  Calculate the intensity of the ROI image using the VGG16 and InceptionV3 model. 
 
+<img src="https://github.com/manchalaharikesh/Cylone_Detection_Intensity_Estimation/blob/main/static/Methodoly_Cyclone_Estimation.jpg?raw=true">
+
 
 ## Results
 
