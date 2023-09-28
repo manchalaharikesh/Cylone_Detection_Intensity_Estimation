@@ -4,7 +4,12 @@ Developing a Convolutional Neural Network (CNN) method for estimating cyclone in
 
 ## Dataset
 
-A dataset comprising 1032 images at an interval of 30 minutes  was obtained from the MOSDAC website, an archive of cyclone imagery captured in the visible band, showcasing varying intensities. These images were organized and matched with corresponding cyclone intensity values for the purpose of estimation.
+The dataset consists of the images of various cyclones (of 30-minute intervals) of the Indian peninsula and its cyclone intensities estimated at every 6hr interval. The collection is of IR images that are suitable for collecting images of cyclones even at night. The missing cyclone intensity values are imputed by time-series data analysis.  The dataset is collected from the Meteorological and oceanographic Satellite data archive center (MOSDAC) of ISRO. The dataset consists of 1032 images. 
+
+The sample images of dataset used can be found at: https://shrtco.de/Lxm8WD
+
+Visit MOSDAC at: https://www.mosdac.gov.in/
+
 
 ## Methodology
 
